@@ -4,19 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pay bill</title>
-  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+  <title>Document</title>
 </head>
 <link rel="icon" href="../images/logo_ok.ico" />
 <style>
   /*字型*/
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
 
-  html,
-  body {
-    background-color: whitesmoke;
-  }
 
+  /*header_class*/
   .page {
     display: flex;
     flex-direction: column;
@@ -52,148 +48,29 @@
     text-decoration: underline white 3px;
   }
 
+
   .head_icon {
     float: right;
     margin-left: 400px;
   }
 
-
-  /*祐晨用的css*/
-  /*版面配置*/
   .content {
-    width: 1200px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .insideleft {
-    width: auto;
-    height: auto;
-  }
-
-  .textinside {
-    width: auto;
-    height: auto;
-    margin-left: 250px;
-    margin-right: 250px;
-    text-align: left;
-    padding: 20px;
-    background-color: white;
   }
 
   footer {
     width: 1200px;
     text-align: center;
-
-    color: white;
+    color: black;
     float: left;
     background-color: gray;
-  }
-
-  /*圖片*/
-  .bgimg {
-    /*背景圖片*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 600px;
-    height: 300px;
-    border-radius: 90px;
-    margin-left: 300px;
-    padding: 20px;
-  }
-
-  .bgimg2 {
-    /*背景圖片*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 270px;
-    border-radius: 90px;
-  }
-
-  .hr1 {
-    background-color: black;
-    width: auto;
-  }
-
-  .hr2 {
-    background-color: black;
-    width: auto;
-    margin-top: 500px;
-  }
-
-  .body_text {
-    /*登入/註冊分行*/
-    columns: 2;
-    column-rule: silver solid 1px;
-    position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 25px;
-    column-gap: 90px;
-  }
-
-  /*字形設定*/
-  .singin_w {
-    /*登入字型*/
-    font-size: 48px;
-    font-weight: bold;
-    font-style: oblique;
-  }
-
-  .e_w {
-    /*英文字*/
-    font-size: 30px;
-  }
-
-  .e_w_text {
-    /*text內文字*/
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .e_w_text1 {
-    /*訂單編號文字*/
-    font-size: 25px;
-  }
-
-
-  .c_w {
-    font-size: 30px;
-    margin-left: 10px;
-  }
-
-  .h1_w {
-    font-size: 48px;
-    text-align: center;
-  }
-
-  .c_w_text {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .c_w_text1 {
-    /*訂單編號*/
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-
-  th {
-    text-decoration: underline;
-    font-size: 35px;
-    text-align: center;
-  }
-
-  td {
-    font-size: 35px;
-    text-align: center;
   }
 </style>
 
 <body>
+
   <div class="page">
     <!--header_store-->
     <div class="head">
@@ -219,67 +96,86 @@
 
     </div>
   </div>
+  <!--結帳清單-->
 
-  <!--交易紀錄-->
+  <p class="pay bill" style="margin-top: 100px;font-size: 30px;">結帳</p>
+  <hr>
 
-  <div class=" content">
-    <div class=" insideleft">
-      <p>
-        <h1 class=" h1_w" style="margin-top: 200px;"> 購物車</h1>
-      </p>
-      <hr class="hr1">
-      <div class=" c_w">
-        我的購物車如下
-      </div>
-      <hr class="hr1">
-      <div>
-        <table border="1" style="margin-left: 250px;">
+  <button onclick="window.location.href='shopping-cart.html'">返回購物車</button>
+  <div>
+    <table border="1">
+      <tr>
+        <td>訂單商品</td>
+        <td>單價</td>
+        <td>數量</td>
+        <td>總額</td>
+      </tr>
 
-          <thead>
-            <tr>
-              <th>
-                名稱
-              </th>
-              <th>
-                數量
-              </th>
-              <th>
-                金額
-              </th>
-              <th>
-                總計
-              </th>
-              <th>
-                取消
-              </th>
-            </tr>
-            <tr>
-              <td>Pista GP RR</td>
-              <td>1</td>
-              <td>16,500</td>
-              <td>16,500</td>
-              <td><button name="cancel" class=" c_w_text1" style="margin-left: 15px;">取消選購</button>
-              </td>
-            </tr>
-          </thead>
-        </table>
-        <div>
-          <hr class="hr2">
-          <span>
-            <button name="keep shopping" class="c_w_text1"
-              style="margin-left: 50px;margin-top: 10px; position: absolute;"
-              onclick="window.location.href = 'store_1.html';">繼續選購</button>
-            <!--有改-->
-            <button name="pay bill" class="c_w_text1" style="margin-left: 1050px;margin-top: 20px;">前往買單</button>
-          </span>
-        </div>
-      </div>
+      <tr>
+        <td>Pista GP RR</td>
+        <td>16,500</td>
+        <td>1</td>
+        <td>16,500</td>
+      </tr>
+    </table>
+
+    <p>備註：</p><input type="text">
+    <hr>
+    <div>
+      <h3>寄送資訊</h3>
+
+      <p>付款方式：</p>
+      <select>
+        <option>貨到付款</option>
+        <option>信用卡</option>
+        <option>ATM轉帳繳費</option>
+        <option>全家代碼繳費</option>
+        <option>7-11代碼繳費</option>
+      </select>
+
+      <p>運送方式：</p>
+
+      <select>
+        <option>7-11</option>
+        <option>全家</option>
+        <option>萊爾富</option>
+        <option>ok mart</option>
+        <option>黑貓宅急便</option>
+      </select>
+
+      <p>地址：</p><input type="text">
     </div>
+    <hr>
+    <table>
+      <tr>
+        <td>小計：</td>
+        <td>$780</td>
+      </tr>
 
+      <tr>
+        <td>運費：</td>
+        <td>$80</td>
+      </tr>
+
+      <tr>
+        <td>總付款金額：</td>
+        <td>$780</td>
+      </tr>
+    </table>
+    <hr>
+    <button>我要下單</button>
+
+
+  </div>
+
+
+
+  <!--頁尾-->
+  <div class="page">
     <footer>
       <div>
 
-        <img src="/images/logo_index.png"
+        <img src="../images/logo_index.png"
           style="width: 100px;height: 100px;float: left;margin-left: 20px; padding: 35px;">
         <div style="text-align: center; float: left;margin-top: 35px;margin-left: 290px;padding: 35px;">
           頭戴安全帽，安全有一套
