@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -111,6 +112,11 @@
     font-size: 30px;
   }
 
+  .note_w {
+    font-size: 28px;
+
+  }
+
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
@@ -139,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -312,11 +326,10 @@
           </p>
           <p>
             <div>
-              <button class="button_w" name="-">-</button>
-              <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-              <button class="button_w button_ddd " name="+">+</button><span
-                style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-              <!--有改這邊_1231_new-->
+              <!--有改這邊_1/2_new-->
+              <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+              <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+              <!--有改這邊_1/2_new-->
             </div>
           </p>
           <p>
@@ -329,6 +342,7 @@
         </div>
       </div>
       <!--產品說明-->
+      <!--有改這邊_1/2_new-->
       <div class="content">
         <div class="insideleft">
           <p>
@@ -338,14 +352,17 @@
             </h1>
             <hr>
             <div class="box1">
+              <div class="note_w">
+                <div class="note_w" style="font-weight: bold; text-align: center;">
+                  GT-Air II
+                </div>
+                富有侵略性的x正統設計象徵著該系列GT-Air
+                II繼承了顳部的形狀，這是GT-Air的象徵性設計，同時具有更前衛的外殼設計，與通風部件整合在一起，並從頭部的前部向後部流動。尖銳的下巴線和專用的通信系統安裝空間增加了重點。
+              </div>
               <p>
-
+                <img class="notebox" src="../../images/products/note/GT-Air_II.jpg">
               </p>
-
-              <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
             </div>
-
-
 
           </p>
         </div>

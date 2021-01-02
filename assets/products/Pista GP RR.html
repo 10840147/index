@@ -47,7 +47,6 @@
   }
 
 
-
   .head_icon {
     float: right;
     margin-left: 400px;
@@ -76,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -90,7 +90,6 @@
   footer {
     width: 1200px;
     text-align: center;
-    font-family: 微軟正黑體;
     color: white;
     float: left;
     background-color: gray;
@@ -99,7 +98,6 @@
   /*文字css*/
   .h1_w {
     font-size: 36px;
-    font-family: 微軟正黑體;
     font-weight: bold;
   }
 
@@ -112,20 +110,22 @@
   .word {
     /*內文文字：顏色選取*/
     font-size: 30px;
-    font-family: 微軟正黑體;
+  }
+
+  .note_w {
+    font-size: 28px;
+
   }
 
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     color: teal;
   }
 
   .word2 {
     /*內文文字：產品說明*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     text-align: center;
   }
 
@@ -145,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -194,9 +202,9 @@
   }
 
   .modal {
-    margin-left: 250px;
-    width: 700px;
-    height: 600px;
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -229,8 +237,6 @@
     margin-right: 50px;
     float: left;
   }
-
-  /*點擊按鈕更換圖片*/
 
   .box2 {
     width: 400px;
@@ -325,11 +331,10 @@
         </p>
         <p>
           <div>
-            <button class="button_w" name="-">-</button>
-            <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-            <button class="button_w button_ddd " name="+">+</button><span
-              style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-            <!--有改這邊_1231_new-->
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
           </div>
         </p>
         <p>
@@ -342,6 +347,7 @@
       </div>
     </div>
     <!--產品說明-->
+    <!--有改這邊_1/2_new-->
     <div class="content">
       <div class="insideleft">
         <p>
@@ -351,15 +357,23 @@
           </h1>
           <hr>
           <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                Pista GP RR
+              </div>
+              此頂安全帽是為了MotoGP™選手專用的純種賽道帽。
+              為MotoGP™賽而生的競賽帽體，與世界冠軍一模一樣的帽子。經過最高規格「FIM」安全認證，PISTA為最高安全級別的帽體。
+              全帽最高級別性能，帽殼100%最高等級碳纖維，輕量化卻符合最嚴格的安全規範；五個金屬進風口與後方負壓排氣口，經過風洞實驗室與試車手賽道測試，達到通氣性與空氣力學最佳化，搭配RR版最新的PRO擾流鴨尾，高速行駛達到最小風阻與穩定性。
+              護目鏡採用最高安全規格防爆鏡片，厚度5mm，有微開系統，寬闊的190度全景視野，讓您在競賽或道路皆能洞察先機。
+              內襯具有360度調整系統「AF內襯調整系統」(Adaptive Fit System)，可自行調整內襯，達到任何頭型皆能服貼穩定的效果，讓騎士能專注在騎乘表現上。
+              每個細節都為了追求勝利而設計
+              這就是癡迷的美好。
+
+            </div>
             <p>
-              <img src="../../images/AGV/K1/agvk1_W.jpg" class="thum-img" style="height: 300px;width: 300px;">
+              <img class="notebox" src="../../images/products/note/PISTA_GP_RR.png">
             </p>
-
-            <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
           </div>
-
-
-
         </p>
       </div>
       <div class="insideleft">

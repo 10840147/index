@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -89,7 +90,6 @@
   footer {
     width: 1200px;
     text-align: center;
-    font-family: 微軟正黑體;
     color: white;
     float: left;
     background-color: gray;
@@ -98,7 +98,6 @@
   /*文字css*/
   .h1_w {
     font-size: 36px;
-    font-family: 微軟正黑體;
     font-weight: bold;
   }
 
@@ -111,20 +110,22 @@
   .word {
     /*內文文字：顏色選取*/
     font-size: 30px;
-    font-family: 微軟正黑體;
+  }
+
+  .note_w {
+    font-size: 28px;
+
   }
 
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     color: teal;
   }
 
   .word2 {
     /*內文文字：產品說明*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     text-align: center;
   }
 
@@ -144,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -193,9 +202,9 @@
   }
 
   .modal {
-    margin-left: 250px;
-    width: 700px;
-    height: 600px;
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -228,8 +237,6 @@
     margin-right: 50px;
     float: left;
   }
-
-  /*點擊按鈕更換圖片*/
 
   .box2 {
     width: 400px;
@@ -314,11 +321,10 @@
         </p>
         <p>
           <div>
-            <button class="button_w" name="-">-</button>
-            <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-            <button class="button_w button_ddd " name="+">+</button><span
-              style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-            <!--有改這邊_1231_new-->
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
           </div>
         </p>
         <p>
@@ -331,6 +337,7 @@
       </div>
     </div>
     <!--產品說明-->
+    <!--有改這邊_1/2_new-->
     <div class="content">
       <div class="insideleft">
         <p>
@@ -340,15 +347,16 @@
           </h1>
           <hr>
           <div class="box1">
-            <p>
-              <img src="../../images/AGV/K1/agvk1_W.jpg" class="thum-img" style="height: 300px;width: 300px;">
-            </p>
-
-            <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                SF-2
+              </div>
+              輕量化設計，適合全罩式新手，體型嬌小者也能舒適配戴。可拆式小鼻罩，避免呼吸時的熱氣在鏡片上凝結霧氣，確保視線清晰。與SF-2M為情侶款設計。SF-2帽體較小，適合女生。通過美國DOT及台灣CNS安全認證。DOT測試內容包含穿透測試、撞擊測試、視野角度測試等，為消費者的安全提供保障。扣具採用金屬雙D扣，是國際上公認最安全的扣具。市面上常見的插扣，在撞擊時容易斷裂或彈開，造成安全帽飛脫而失去保護作用。
+              <p>
+                <img class="notebox" src="../../images/products/note/SF-2.jpg">
+              </p>
+            </div>
           </div>
-
-
-
         </p>
       </div>
       <div class="insideleft">

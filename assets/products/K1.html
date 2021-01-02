@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -111,6 +112,11 @@
     font-size: 30px;
   }
 
+  .note_w {
+    font-size: 28px;
+
+  }
+
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
@@ -141,6 +147,14 @@
 
   }
 
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
+  }
+
   /*留言板*/
   .msg {
     margin: 20px 0;
@@ -154,7 +168,7 @@
     height: 100px;
     border-radius: 50%;
     background: #e4f0fb;
-    background-image: url(/images/會員_ok.png);
+    background-image: url(/images/user.png);
     background-position: center;
     background-size: 100px;
   }
@@ -188,9 +202,9 @@
   }
 
   .modal {
-    margin-left: 250px;
-    width: 700px;
-    height: 600px;
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -223,8 +237,6 @@
     margin-right: 50px;
     float: left;
   }
-
-  /*點擊按鈕更換圖片*/
 
   .box2 {
     width: 400px;
@@ -319,11 +331,10 @@
         </p>
         <p>
           <div>
-            <button class="button_w" name="-">-</button>
-            <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-            <button class="button_w button_ddd " name="+">+</button><span
-              style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-            <!--有改這邊_1231_new-->
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
           </div>
         </p>
         <p>
@@ -336,6 +347,7 @@
       </div>
     </div>
     <!--產品說明-->
+    <!--有改這邊_1/2_new-->
     <div class="content">
       <div class="insideleft">
         <p>
@@ -345,43 +357,46 @@
           </h1>
           <hr>
           <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold;text-align: center;">
+                K1系列
+              </div>
+              依照賽道帽設計，經過空氣力學及空洞測試，尾端擾流板(壓尾)可提昇騎乘表現及高速穩定性。190度全景鏡片具有寬闊的視野及防刮耐磨的特性。舒適的Dry-Comfort內襯皆可拆卸，並在雨天騎乘時達到最小程度的進水與不適感。帽體由4片分離式EPS樹脂組成，可分散撞擊的力道與反彈。
+            </div>
             <p>
-              <img src="../../images/AGV/K1/agvk1_W.jpg" class="thum-img" style="height: 300px;width: 300px;">
+              <img class="notebox" src="../../images/products/note/AGVK1.png">
             </p>
-
-            <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
           </div>
-
-
-
         </p>
       </div>
-      <div class="insideleft">
-        <form>
-          <fieldset>
-            <legend class="h1_w">留言板</legend>
-            <textarea style="width: 1100px;height: 200px;" name="msg" rows="5"></textarea><br>
-            <button name="output" class="button_w">留言</button>
-          </fieldset>
-          <hr>
-          <div>
-            <div class="msg">
-              <div class="msg_img">
+    </div>
+
+    <div class="insideleft">
+      <form>
+        <fieldset>
+          <legend class="h1_w">留言板</legend>
+          <textarea style="width: 1100px;height: 200px;" name="msg" rows="5"></textarea><br>
+          <button name="output" class="button_w">留言</button>
+        </fieldset>
+        <hr>
+        <div>
+          <div class="msg">
+            <div class="msg_img">
+            </div>
+            <div class="mag__body">
+              <div class="msg__info">
+                <span class="msg__author">巴巴</span>
+                <span class="msg__time">2020-12-26 </span>
               </div>
-              <div class="mag__body">
-                <div class="msg__info">
-                  <span class="msg__author">巴巴</span>
-                  <span class="msg__time">2020-12-26 </span>
-                </div>
-                <p class="msg__content">
-                  咪咪咪！
-                </p>
-              </div>
+              <p class="msg__content">
+                咪咪咪！
+              </p>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
+
 
     <footer>
       <div>
@@ -397,14 +412,9 @@
           https://www1.cycu.edu.tw/
 
         </div>
-
       </div>
-
     </footer>
-
   </div>
-
-
 </body>
 
 </html>

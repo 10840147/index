@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -111,6 +112,11 @@
     font-size: 30px;
   }
 
+  .note_w {
+    font-size: 28px;
+
+  }
+
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
@@ -139,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -305,12 +319,10 @@
           </p>
           <p>
             <div>
-              <button class="button_w" name="-">-</button>
-              <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-              <button class="button_w button_ddd " name="+">+</button><span
-                style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-              <!--有改這邊_1231_new-->
-
+              <!--有改這邊_1/2_new-->
+              <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+              <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+              <!--有改這邊_1/2_new-->
 
             </div>
           </p>
@@ -324,6 +336,7 @@
         </div>
       </div>
       <!--產品說明-->
+      <!--有改這邊_1/2_new-->
       <div class="content">
         <div class="insideleft">
           <p>
@@ -333,17 +346,21 @@
             </h1>
             <hr>
             <div class="box1">
-              <p>
+              <div class="note_w">
+                <div class="note_w" style="font-weight: bold; text-align: center;">
+                  68SII
+                </div>
+                經典跑車造型鴨尾，讓安全帽升級成為時尚配件。可拆式小鼻罩，避免呼吸時的熱氣在鏡片上凝結霧氣，確保視線清晰。通過美國DOT及台灣CNS安全認證。DOT測試內容包含穿透測試、撞擊測試、視野角度測試等，為消費者的安全提供保障。扣具採用金屬雙D扣，是國際上公認最安全的扣具。市面上常見的插扣，在撞擊時容易斷裂或彈開，造成安全帽飛脫而失去保護作用。大鏡片，採用抗UV400鏡片，同樣通過DOT安全認證，護眼又安全，用腳踩也不會破。快拆式鏡片設計，不需任何工具即可自行更換大鏡片。
+                D.E.V.S. 雙重排氣系統(Dual Exhaust Venting System)，分別為前額進氣及後方負壓排氣, 提升通風效率。
 
-              </p>
-
-              <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
+                <p>
+                  <img class="notebox" src="../../images/products/note/68SII.jpg">
+                </p>
+              </div>
             </div>
-
-
-
           </p>
         </div>
+
         <div class="insideleft">
           <form>
             <fieldset>

@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -89,7 +90,6 @@
   footer {
     width: 1200px;
     text-align: center;
-    font-family: 微軟正黑體;
     color: white;
     float: left;
     background-color: gray;
@@ -98,7 +98,6 @@
   /*文字css*/
   .h1_w {
     font-size: 36px;
-    font-family: 微軟正黑體;
     font-weight: bold;
   }
 
@@ -111,20 +110,22 @@
   .word {
     /*內文文字：顏色選取*/
     font-size: 30px;
-    font-family: 微軟正黑體;
+  }
+
+  .note_w {
+    font-size: 28px;
+
   }
 
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     color: teal;
   }
 
   .word2 {
     /*內文文字：產品說明*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     text-align: center;
   }
 
@@ -144,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -193,9 +202,9 @@
   }
 
   .modal {
-    margin-left: 250px;
-    width: 700px;
-    height: 600px;
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -228,8 +237,6 @@
     margin-right: 50px;
     float: left;
   }
-
-  /*點擊按鈕更換圖片*/
 
   .box2 {
     width: 400px;
@@ -324,11 +331,10 @@
         </p>
         <p>
           <div>
-            <button class="button_w" name="-">-</button>
-            <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-            <button class="button_w button_ddd " name="+">+</button><span
-              style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-            <!--有改這邊_1231_new-->
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
           </div>
         </p>
         <p>
@@ -341,6 +347,7 @@
       </div>
     </div>
     <!--產品說明-->
+    <!--有改這邊_1/2_new-->
     <div class="content">
       <div class="insideleft">
         <p>
@@ -350,65 +357,65 @@
           </h1>
           <hr>
           <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                K5
+              </div>
+              是一款價格適中的舒適帽款，實用的下拉式內墨片令騎乘時不畏懼豔陽，帽體經過空氣力學及空洞測試，尾端擾流板(壓尾)可提昇騎乘表現及高速穩定性。190度全景鏡片具有寬闊的視野及防刮耐磨的特性。舒適的Dry-Comfort內襯皆可拆卸，並在雨天騎乘時達到最小程度的進水與不適感。帽體由4片分離式EPS樹脂組成，可分散撞擊的力道與反彈。
+            </div>
             <p>
-              <img src="../../images/AGV/K1/agvk1_W.jpg" class="thum-img" style="height: 300px;width: 300px;">
+              <img class="notebox" src="../../images/products/note/AGVK5.png">
             </p>
-
-            <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
           </div>
-
-
-
+          <div class="insideleft">
+            <form>
+              <fieldset>
+                <legend class="h1_w">留言板</legend>
+                <textarea style="width: 1100px;height: 200px;" name="msg" rows="5"></textarea><br>
+                <button name="output" class="button_w">留言</button>
+              </fieldset>
+              <hr>
+              <div>
+                <div class="msg">
+                  <div class="msg_img">
+                  </div>
+                  <div class="mag__body">
+                    <div class="msg__info">
+                      <span class="msg__author">巴巴</span>
+                      <span class="msg__time">2020-12-26 </span>
+                    </div>
+                    <p class="msg__content">
+                      咪咪咪！
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
         </p>
       </div>
-      <div class="insideleft">
-        <form>
-          <fieldset>
-            <legend class="h1_w">留言板</legend>
-            <textarea style="width: 1100px;height: 200px;" name="msg" rows="5"></textarea><br>
-            <button name="output" class="button_w">留言</button>
-          </fieldset>
-          <hr>
-          <div>
-            <div class="msg">
-              <div class="msg_img">
-              </div>
-              <div class="mag__body">
-                <div class="msg__info">
-                  <span class="msg__author">巴巴</span>
-                  <span class="msg__time">2020-12-26 </span>
-                </div>
-                <p class="msg__content">
-                  咪咪咪！
-                </p>
-              </div>
-            </div>
+
+      <footer>
+        <div>
+
+          <img src="../../images/logo_index.png" style="width: 80px;height: 80px;float: left;margin-left: 20px;">
+          <div style="text-align: center; float: left;margin-top: 35px;margin-left: 430px;">
+            我愛貓貓，貓貓愛我
           </div>
-        </form>
-      </div>
+          <div style="text-align: center; float: right;margin-top: 5px;margin-right: 20px;">
+            中原大學資訊管理學系<br>
+            320桃園市中壢區中原大學<br>
+            Tel: 03 265 9999<br>
+            https://www1.cycu.edu.tw/
+
+          </div>
+
+        </div>
+
+      </footer>
+
     </div>
-
-    <footer>
-      <div>
-
-        <img src="../../images/logo_index.png" style="width: 80px;height: 80px;float: left;margin-left: 20px;">
-        <div style="text-align: center; float: left;margin-top: 35px;margin-left: 430px;">
-          我愛貓貓，貓貓愛我
-        </div>
-        <div style="text-align: center; float: right;margin-top: 5px;margin-right: 20px;">
-          中原大學資訊管理學系<br>
-          320桃園市中壢區中原大學<br>
-          Tel: 03 265 9999<br>
-          https://www1.cycu.edu.tw/
-
-        </div>
-
-      </div>
-
-    </footer>
-
   </div>
-
 
 </body>
 

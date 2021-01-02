@@ -75,8 +75,9 @@
 
   .box1 {
     width: 1200px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.89);
+    height: auto;
+
+
   }
 
 
@@ -89,7 +90,6 @@
   footer {
     width: 1200px;
     text-align: center;
-    font-family: 微軟正黑體;
     color: white;
     float: left;
     background-color: gray;
@@ -98,7 +98,6 @@
   /*文字css*/
   .h1_w {
     font-size: 36px;
-    font-family: 微軟正黑體;
     font-weight: bold;
   }
 
@@ -111,20 +110,22 @@
   .word {
     /*內文文字：顏色選取*/
     font-size: 30px;
-    font-family: 微軟正黑體;
+  }
+
+  .note_w {
+    font-size: 28px;
+
   }
 
   .word1 {
     /*內文文字：價錢*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     color: teal;
   }
 
   .word2 {
     /*內文文字：產品說明*/
     font-size: 30px;
-    font-family: 微軟正黑體;
     text-align: center;
   }
 
@@ -144,6 +145,14 @@
     /*按鈕直接買的排版*/
     margin-left: 50px;
 
+  }
+
+  .notebox {
+    width: 1100px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+    margin-left: 50PX;
   }
 
   /*留言板*/
@@ -193,9 +202,9 @@
   }
 
   .modal {
-    margin-left: 250px;
-    width: 700px;
-    height: 600px;
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
   }
 
@@ -228,8 +237,6 @@
     margin-right: 50px;
     float: left;
   }
-
-  /*點擊按鈕更換圖片*/
 
   .box2 {
     width: 400px;
@@ -321,11 +328,10 @@
         </p>
         <p>
           <div>
-            <button class="button_w" name="-">-</button>
-            <input type="text" name="number" value="0" size="5" class="button_w button_ddd " />
-            <button class="button_w button_ddd " name="+">+</button><span
-              style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
-            <!--有改這邊_1231_new-->
+            <!--有改這邊_1/2_new-->
+            <input type="number" name="number" size="2" value="0" max="10" min="0" class="button_w button_ddd">
+            <span style="color: red;margin-left: 20px;font-size: 30px;">剩餘數量：10</span>
+            <!--有改這邊_1/2_new-->
           </div>
         </p>
         <p>
@@ -338,6 +344,7 @@
       </div>
     </div>
     <!--產品說明-->
+    <!--有改這邊_1/2_new-->
     <div class="content">
       <div class="insideleft">
         <p>
@@ -347,14 +354,19 @@
           </h1>
           <hr>
           <div class="box1">
+            <div class="note_w">
+              <div class="note_w" style="font-weight: bold; text-align: center;">
+                Race R Pro
+              </div>
+              世界上第一個獲得FRHPhe-01認證的品牌。
+              RACE-R Pro GP FIM RACING 通過（國際摩托車聯合會）最新的FIM標準。
+              自2019年6月起在Moto GP和超級摩托車中及2020年所有FIM錦標賽，都將強制要求車手佩戴通過FIM標準的安全帽。
+
+            </div>
             <p>
-              <img src="../../images/AGV/K1/agvk1_W.jpg" class="thum-img" style="height: 300px;width: 300px;">
+              <img class="notebox" src="../../images/products/note/SHARKRace_R_Pro.jpg">
             </p>
-
-            <div class="word" style="background-color:white">白色的帽帽恩....要一起想產品說明的文案呀?</div>
           </div>
-
-
 
         </p>
       </div>
