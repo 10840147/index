@@ -11,168 +11,10 @@
 <style>
   /*字型*/
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+  @import url(../css/member_profile.css);
 
   * {
     font-family: 'Noto Serif TC', serif;
-  }
-
-  html,
-  k body {
-    background-color: whitesmoke;
-  }
-
-  .page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .head {
-    display: flex;
-    background-color: #6C6C6C;
-    width: 1200px;
-  }
-
-
-  .head_menu {
-    display: flex;
-    text-align: center;
-    align-items: center;
-  }
-
-  .head_link {
-    padding: 0 30px 0 30px;
-    letter-spacing: 2px;
-    font-size: 20pt;
-  }
-
-  .link {
-    color: white;
-    text-decoration: none;
-  }
-
-  .link:hover {
-    text-decoration: underline white 3px;
-  }
-
-  .head_icon {
-    float: right;
-    margin-left: 400px;
-  }
-
-
-  /*祐晨用的css*/
-  /*版面配置*/
-  .content {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-
-  .insideleft {
-    width: auto;
-    height: auto;
-    background-color: rgba(208, 213, 199, 0.796);
-  }
-
-  .textinside {
-    width: auto;
-    height: auto;
-    margin-left: 250px;
-    margin-right: 250px;
-    text-align: left;
-    padding: 20px;
-    background-color: white;
-  }
-
-  footer {
-    width: 1200px;
-    text-align: center;
-
-    color: white;
-    float: left;
-    background-color: gray;
-  }
-
-  /*圖片*/
-  .bgimg {
-    /*背景圖片*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 600px;
-    height: 300px;
-    border-radius: 90px;
-    margin-left: 300px;
-    padding: 20px;
-  }
-
-  .bgimg2 {
-    /*背景圖片*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 400px;
-    height: 270px;
-    border-radius: 90px;
-  }
-
-  hr {
-    background-color: black;
-    width: 1000px;
-  }
-
-  .body_text {
-    /*登入/註冊分行*/
-    columns: 2;
-    column-rule: silver solid 1px;
-    position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 25px;
-    column-gap: 90px;
-  }
-
-  /*字形設定*/
-  .singin_w {
-    /*登入字型*/
-    font-size: 48px;
-    font-weight: bold;
-
-    font-style: oblique;
-  }
-
-  .e_w {
-    /*英文字*/
-
-    font-size: 30px;
-    margin-left: 10px;
-  }
-
-  .e_w_text {
-    /*text內文字*/
-
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .c_w {
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: 10px;
-  }
-
-  .h1_w {
-
-    font-size: 48px;
-    text-align: center;
-  }
-
-  .c_w_text {
-
-    font-size: 20px;
-    text-align: center;
   }
 </style>
 
@@ -216,12 +58,12 @@
         <div class=" c_w">
           <p>
             名稱：
-            <span style="margin-left: 50px;">辛巴</span>
+            <span style="margin-left: 30px;">辛巴</span>
           </p>
         </div>
-        <div class=" e_w">
+        <div class=" c_w">
           E-mail：
-          <span style="margin-left: 50px;">貓貓星球貓貓窩</span>
+          <span>貓貓星球貓貓窩</span>
 
         </div>
         <div class="c_w">
@@ -231,12 +73,12 @@
 
           <p>
             生日：
-            <span style="margin-left: 50px;">2021/01/01</span>
+            <span style="margin-left: 40px;">2021/01/01</span>
           </p>
 
           <p>
             居住地：
-            <span style="margin-left: 50px;">貓貓星球貓貓窩</span>
+            <span style="margin-left: 10px;">貓貓星球貓貓窩</span>
 
           </p>
 
@@ -248,11 +90,11 @@
 
 
           <button onclick="window.location.href='password_change.html'" class=" c_w_text" name="password"
-            style="border-radius: 90px;">更改密碼</button>
+            style="border-radius: 90px;margin-left: 30px;">更改密碼</button>
 
 
           <button onclick="window.location.href='member profile.html'" class=" c_w_text" name="notchange"
-            style="border-radius: 90px; margin-left: 250px;">
+            style="border-radius: 90px; margin-left: 300px;">
             送出更動</button>
 
 
